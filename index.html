@@ -43,69 +43,79 @@
         }
         .two-column{
             width: 100%;
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            gap: 7;
+            gap: 7; */
         }
-        .firstColumn-row2-text{
-            order: 2;
+        .two-column .column{
+            width: 264px;
+            display: inline-block;
+            margin-bottom: 80px;
+            /* order: 2;
             align-self: flex-start;
-            margin-top: 15px;
+            margin-top: 15px; */
         }
-        .firstColumn-row2-img{
-            order: 1;
+        .two-column .column-img{
+            width: 223px;
+            display: inline-block;
+        }
+        .two-column .firstColumn-row2-text{
+           margin-bottom: 125px;
         }
         .two-column-last{
-            width: 100%;
-            display: flex;
-            gap: 8px;
-            padding-top: 40px;
+          padding-top: 40px;
         }
-        .lastColumnTxt{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 50px;
+        .two-column-last .last-column-text{
+            width: 150px;
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .two-column-last .last-column-img{
+            width: 267px;
+            display: inline-block;
+            margin-left: 45px;
+        }
+        .welcomeImg5{
+           position: relative;
+           top: 10px;
         }
 
 		@media screen and (max-width: 600px) { 
         .wrapper{
-            max-width: 300px;
-            width: 100%;
-            margin: 0 auto;
+            max-width: 300px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
         }
-        .two-column{
-            flex-direction: column;
-            align-items: center;
+        .Started1{
+           padding-bottom: 50px !important;
         }
-        .firstColumn-row1-text{
-            order: 2;
-            padding-left: 18px;
+        .Started2{
+          padding-bottom: 70px !important;
+        } 
+        .two-column .column{
+            display: block !important;
+            margin-bottom: 0px !important;
         }
-        .firstColumn-row1-img{
-            order: 1;
+        .two-column .column-img{
+            display: block !important;
         }
-        .firstColumn-row2-text{
-            padding-left: 18px;
+        .two-column .firstColumn-row2-text{
+           margin-bottom: 0px !important;
         }
-        .firstColumn-row3-text{
-            order: 2;
-            padding-left: 18px;
+        .two-column-last .last-column-text{
+            width: 150px;
+            display: block !important;
+            margin-left: 80px !important;
+            margin-bottom: 20px;
         }
-        .firstColumn-row3-img{
-            order: 1;
+        .two-column-last .last-column-img{
+            width: 267px;
+            display: block !important;
+            margin-left: 30px !important;
         }
-        .two-column-last{
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 20px;
-        }
-        .last-column-text{
-            order: 2;
-        }
-        .last-column-img{
-            order: 1;
+        .welcomeImg5{
+           position: relative;
+           top: 10px;
         }
         .ggIcon{
             padding-bottom: 0px !important;
@@ -160,8 +170,8 @@
                        <p style="font-size: 20px; font-weight: bold; text-align: center; padding-top: 30px; padding-bottom: 20px;">Let's Get Started</p>
                        <table width="100%">
                           <tr>
-                            <td class="two-column">
-                               <table class="firstColumn-row1-text">
+                            <td class="two-column Started1">
+                               <table class="column firstColumn-row1-text">
                                  <tr>
                                   <td>
                                     <p style="font-size: 17px; font-weight: bold; color: #000000;">Call to action 1</p>
@@ -170,11 +180,11 @@
                                         adipisicing elit. Iure facere pariatur iusto
                                         autem minus delectus   
                                     </p>
-                                    <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #FFD3E0;">Create an account ---<span style="position: relative; top: 1px;">></span></a>
+                                    <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #f79eb7;">Create an account ---<span style="position: relative; top: 1px;">></span></a>
                                   </td>
                                  </tr>
                                </table>
-                               <table class="firstColumn-row1-img">
+                               <table class="column-img firstColumn-row1-img">
                                   <tr>
                                    <td>
                                     <img src="https://i.ibb.co/ZcB9X4S/welcome2.png" alt=""
@@ -187,25 +197,25 @@
                        </table>
                        <table width="100%">
                         <tr>
-                          <td class="two-column">
-                             <table class="firstColumn-row2-text">
+                          <td class="two-column Started2">
+                             <table class="column-img firstColumn-row2-img">
                                <tr>
                                 <td>
+                                  <img src="https://i.ibb.co/CJ89XNr/welcome3.png" alt=""
+                                  style="padding-bottom: 50px;">
+                                </td>
+                               </tr>
+                             </table>
+                             <table class="column firstColumn-row2-text">
+                                <tr>
+                                 <td>
                                   <p style="font-size: 17px; font-weight: bold; color: #000000;">Call to action 2</p>
                                   <p style="font-size: 15px; line-height: 30px; color: #000000;">
                                       Lorem ipsum dolor sit amet consectetur
                                       adipisicing elit. Iure facere pariatur iusto
                                       autem minus delectus   
                                   </p>
-                                  <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #FFD3E0;">Sync your data ---<span style="position: relative; top: 1px;">></span></a>
-                                </td>
-                               </tr>
-                             </table>
-                             <table class="firstColumn-row2-img">
-                                <tr>
-                                 <td>
-                                  <img src="https://i.ibb.co/CJ89XNr/welcome3.png" alt=""
-                                  style="padding-bottom: 50px;">
+                                  <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #f79eb7;">Sync your data ---<span style="position: relative; top: 1px;">></span></a>
                                  </td>
                                 </tr>
                              </table>
@@ -215,7 +225,7 @@
                      <table width="100%">
                         <tr>
                           <td class="two-column">
-                             <table class="firstColumn-row3-text">
+                             <table class="column firstColumn-row3-text">
                                <tr>
                                 <td>
                                   <p style="font-size: 17px; font-weight: bold; color: #000000;">Call to action 3</p>
@@ -224,14 +234,14 @@
                                       adipisicing elit. Iure facere pariatur iusto
                                       autem minus delectus   
                                   </p>
-                                  <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #FFD3E0;">Start collaborating ---<span style="position: relative; top: 1px;">></span></a>
+                                  <a href="#" class="btn" style="font-size: 15px; font-weight: bold; color: #f79eb7;">Start collaborating ---<span style="position: relative; top: 1px;">></span></a>
                                 </td>
                                </tr>
                              </table>
-                             <table class="firstColumn-row3-img">
+                             <table class="column-img firstColumn-row3-img">
                                 <tr>
                                  <td>
-                                  <img src="https://i.ibb.co/86Y2Bn1/welcome4" alt=""
+                                  <img src="https://i.ibb.co/86Y2Bn1/welcome4.png" alt=""
                                   style="padding-bottom: 50px;">
                                  </td>
                                 </tr>
@@ -244,7 +254,6 @@
                 </table>
               </td>
             </tr>
-
             <!-- Empty Bar -->
             <tr>
               <td width="100%" height="50px" style="background-color: #F9F9F9; border: none;"></td>
@@ -252,7 +261,7 @@
 
             <!-- Get Mobile App Section -->
             <tr style="background-color: #F9F9F9;">
-              <td style="background-color: #FFD3E0; border-radius: 20px 20px 0 0;">
+              <td style="background-color: #FFD3E0; border-radius: 20px 20px 0 0;" class="mobileApp">
                 <table class="wrapper">
                     <tr>
                       <td class="two-column-last">
@@ -261,7 +270,7 @@
                               <td>
                                 <table>
                                     <tr>
-                                      <td class="lastColumnTxt">
+                                      <td class="lastColumnTxt" style="text-align: center;">
                                         <p style="font-size: 24px; font-weight: bold; color: #000000; text-align: center;">Get Our<br>Mobile App</p>
                                         <a href="#"><img src="https://i.ibb.co/drWFkVP/ap.png" 
                                             alt="" style="padding-bottom: 15px;"></a>
@@ -272,10 +281,11 @@
                                 </table>
                               </td>
                             </tr>
+                          </table>
                         <table class="last-column-img">
                             <tr>
                               <td>
-                                <img src="https://i.ibb.co/pQcR0v3/welcome5.png" alt="">
+                                <img src="https://i.ibb.co/pQcR0v3/welcome5.png" alt="" class="welcomeImg5">
                               </td>
                             </tr>
                         </table>
